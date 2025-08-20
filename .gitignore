@@ -1,0 +1,14 @@
+# Ignore everything
+*
+
+# But don't ignore directories (so we can traverse them)
+!*/
+
+
+# Don't ignore .md files
+!*.md
+
+# Don't ignore specific json files (add your specific files)
+!settings.json
+# Or to allow all json files:
+# !*.json

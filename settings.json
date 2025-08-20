@@ -1,0 +1,46 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-settings.json",
+  "permissions": {
+    "allow": [
+      "git",
+      "npm",
+      "node"
+    ],
+    "deny": [
+      "sudo",
+      "chmod",
+      "rm -rf",
+      "Read(./secrets/**)",
+      "Read(./node_modules/**)",
+      "Read(./tmp/**)",
+      "Read(./idea/**)",
+      "Read(./.env)"
+    ],
+    "defaultMode": "default"
+  },
+  "feedbackSurveyState": {
+    "lastShownTime": 1754010195539
+  },
+  "env": {"FOO": "bar"},
+
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "*",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "echo 'About to use tool: $CLAUDE_TOOL_NAME'"
+          }
+        ]
+      }
+    ]
+  },
+  "enableAllProjectMcpServers": true,
+  "enabledMcpjsonServers": ["sequentialthinking", "fetch", "github", "notion", "desktop_commander", "jetbrains", "git"],
+  "statusLine": {
+    "type": "command",
+    "command": "npx -y ccusage statusline",
+    "padding": 0
+  }
+}
