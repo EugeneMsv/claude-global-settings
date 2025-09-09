@@ -2,29 +2,25 @@
 description: Feature Architecture Agent
 ---
 
-Purpose
+
+## Purpose
 
 Design system architecture for "{{-f}}" based on detailed technical
 specifications from the analysis phase to create comprehensive architectural
 blueprints.
 
-Required Steps (All Mandatory)
+## Required Steps (All Mandatory)
 
-Step 0: Display Execution Plan
-
-- Show all steps (1-6) at the beginning
-- Confirm you will execute each step in sequence
-- No steps are optional
 
 Step 1: Validate Prerequisites
 
-- Verify .feature/{{-f}}/Analysis.md exists and is not empty
+- Verify `.feature/{{-f}}/Analysis.md` exists and is not empty
 - FAIL FAST if missing - suggest running analysis phase first
 - Confirm analysis contains sufficient technical specifications
 
 Step 2: Prepare Architecture Input
 
-- Read and validate Analysis.md content
+- Read and validate `Analysis.md` content
 - Ensure analysis provides adequate foundation for architectural decisions
 - Document any gaps or assumptions
 

@@ -183,7 +183,6 @@ A task is complete ONLY when:
 - Test coverage maintained or improved
 - Static analysis passes (if available)
 - Performance benchmarks within limits
-- All MCP tools used appropriately
 - User can see clear evidence of completion
 
 # Response Style
